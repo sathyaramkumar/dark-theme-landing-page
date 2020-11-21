@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --main-background: hsl(218, 28%, 13%);
+    --linear-blue:  hsl(198, 60%, 50%);
+    --linear-cyon: hsl(176, 68%, 64%);
+    --white: white;
+    --body-font-style: 'Open Sans', sans-serif;
+    --headings-font-style: 'Raleway', sans-serif;
+}
+body {
+    background-color: var(--main-background);
+}
+
+
+/* navbar */
+.navbar-brand {
+    text-decoration: none;
+}
+.navbar-brand img {
+    width: 100px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+    font-family: var(--headings-font-style);
+}
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.nav-link {
+    text-decoration: none;
+    color: var(--white);
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+@media (min-width: 1200px) {
+    .navbar {
+        padding: 40px 50px
+    }
+}
+
+
+/* hero */
+.container {
+    width: 70vw;
+    margin: auto;
+}
+.hero-image {
+    width: 70vw;
+    margin: auto;
+    text-align: center;
+}
+.hero-title {
+    color: var(--white);
+    font-family: var(--headings-font-style);
+    text-align: center;
+    width: 70vw;
+    margin: 40px auto auto auto;
+}
+.hero-text {
+    color: var(--white);
+    text-align: center;
+    font-family: var(--body-font-style);
+    font-size: 14px;
+    margin: 20px auto 30px auto;
+}
+.hero-button {
+    display: block;
+    margin: auto;
+    padding: 13px 70px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-family: var(--body-font-style);
+    color: var(--white);
+    font-size: 12px;
+    background-image: linear-gradient(to right , var(--linear-cyon) , var(--linear-blue));
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 80vw;
+        margin: auto;
+    }
+    .hero-image {
+        width: 800px;
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    .hero-title {
+        width: 30vw;
+    }
+    .hero-text {
+        width: 28vw;
+    }
+}
+
+
+/* feature */
+.feature-card {
+    text-align: center;
+    width: 70vw;
+    margin: 60px auto auto auto;
+}
+.feature-card-image {
+    width: 50px;
+    margin: 20px auto;
+}
+.feature-card-title {
+    color: var(--white);
+    font-size: 17px;
+    font-family: var(--headings-font-style);
+    margin: 10px auto;
+}
+.feature-card-text {
+    color: var(--white);
+    font-family: var(--body-font-style);
+    font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+    .feature {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        width: 900px;
+        margin: auto;
+    }
+    .feature-card {
+        width: 300px;
+    }
+}
+
+
+/* productive */
+.productive {
+    margin: 150px auto 100px auto;
+}
+.productive-image {
+    width: 90vw;
+    display: block;
+    margin: auto auto 60px auto;
+}
+.productive-content {
+    width: 70vw;
+    margin: auto;
+}
+.productive-title {
+    color: var(--white);
+    font-size: 18px;
+    font-family: var(--headings-font-style);
+    margin-bottom: 30px;
+}
+.productive-text {
+    margin-bottom: 20px;
+    color: var(--white);
+    font-family: var(--body-font-style);
+    font-size: 13px;
+}
+.productive-link {
+    color: var(--linear-cyon);
+    font-family: var(--body-font-style);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+}
+.productive-link::after {
+    content: '';
+    width: 125px;
+    height: 1px;
+    background-color: var(--linear-cyon);
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+@media (min-width: 1200px) {
+    .productive {
+        display: flex;
+        width: 1000px;
+        margin: 50px auto auto auto;
+    }
+    .productive-image {
+        width: 700px;
+    }
+    .productive-content {
+        margin-left: 50px;
+        width: 500px;
+    }
+    .productive-title {
+        font-size: 35px;
+        width: 300px;
+        font-weight: 700;
+    }
+    .productive-text {
+        width: 450px;
+    }
+}
