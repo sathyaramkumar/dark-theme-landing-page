@@ -1,0 +1,56 @@
+.hero {
+    .container {
+        width: 70vw;
+        margin: auto;
+        .hero-image {
+            width: 70vw;
+            margin: auto;
+            text-align: center;
+        }
+        .hero-title {
+            color: $white;
+            font-family: $headings-font-style;
+            text-align: center;
+            width: 70vw;
+            margin: 40px auto auto auto;
+        }
+        .hero-text {
+            color: $white;
+            text-align: center;
+            font-family: $body-font-style;
+            font-size: 14px;
+            margin: 20px auto 30px auto;
+        }
+        .hero-button {
+            display: block;
+            margin: auto;
+            padding: 13px 70px;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            font-family: $body-font-style;
+            color: $white;
+            font-size: 12px;
+            background-image: linear-gradient(to right , $linear-cyon , $linear-blue);
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 80vw;
+        margin: auto;
+        .hero-image {
+            width: 800px;
+            display: block;
+            margin: auto;
+            text-align: center;
+        }
+        .hero-title {
+            width: 30vw;
+        }
+        .hero-text {
+            width: 28vw;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.footer {
+    background-color: $footer-background;
+    &-logo {
+        padding: 20px;
+    }
+    &-text {
+        color: $white;
+        img {}
+    }
+    &-contact {
+        color: $white;
+        img {
+
+        }
+    }
+    &-email {
+        color: $white;
+        img {}
+    }
+    &-nav {
+        .footer-nav-item {
+            .footer-nav-link {
+
+            }
+        }
+    }
+    &-social-media {
+        i {
+
+        }
+    }
+}

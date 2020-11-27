@@ -1,0 +1,36 @@
+.feature {
+    &-card {
+        text-align: center;
+        width: 70vw;
+        margin: 60px auto auto auto;
+        &-image {
+            width: 50px;
+            margin: 20px auto;
+        }
+        &-title {
+            color: $white;
+            font-size: 17px;
+            font-family: $headings-font-style;
+            margin: 10px auto;
+        }
+        &-text {
+            color: $white;
+            font-family: $body-font-style;
+            font-size: 14px;
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .feature {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        width: 900px;
+        margin: auto;
+        &-card {
+            width: 300px;
+        }
+    }
+}
