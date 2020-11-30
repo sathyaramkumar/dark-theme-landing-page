@@ -10,7 +10,11 @@
 
 
   <!-- css link -->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="scss/style.css">
+
+  <!-- font cdn -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 
   <!-- font family link -->
@@ -25,7 +29,7 @@
 </head>
 
 <body>
-  <div class="navbar">
+  <header class="navbar">
     <a href="#" class="navbar-brand">
       <img src="images/logo.svg" alt="logo">
     </a>
@@ -42,7 +46,7 @@
         </li>
       </ul>
     </nav>
-  </div>
+  </header>
 
   <section class="hero">
     <div class="container">
@@ -149,44 +153,88 @@
         </div>
       </div>
     </div>
+
+    <div class="card">
+      <p class="card-text">
+        Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+        become a well-oiled collaboration machine.
+      </p>
+      <div class="row">
+        <img src="images/profile-3.jpg" class="card-img" alt="iva boyd">
+        <div class="avatar-name">
+          <h5 class="card-title">Iva Boyd</h5>
+          <small class="card-sub-title">Founder & CEO, Huddle</small>
+        </div>
+      </div>
+    </div>
   </section>
 
-  
-  
-
-  Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
-  become a well-oiled collaboration machine.
-
-  Iva Boyd
-  Founder & CEO, Huddle
-
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
-  questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-  dolore magna aliqua
-
-  +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+  <section class="page-form">
+    <h4 class="page-form-title">
+      Get early access today
+    </h4>
+    <p class="page-form-text">
+      It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+      questions, our support team would be happy to help you.
     </p>
+    <form>
+      <input type="email" placeholder="email@example.com" class="page-form-input">
+      <button class="page-form-btn">Get Started For Free</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <img src="images/logo.svg" class="footer-logo" alt="page-logo">
+    <div class="footer-text">
+      <img src="images/icon-location.svg" class="location-img" alt="location">
+      <p class="footer-line">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+      dolore magna aliqua
+      </p>
+    </div>
+    <p class="footer-contact">
+      <img src="images/icon-phone.svg" alt="phone">
+      +1-543-123-4567
+    </p>
+    <p class="footer-email">
+      <img src="images/icon-email.svg" alt="email">
+      example@fylo.com
+    </p>
+    <div class="footer-nav">
+      <ul>
+        <li class="footer-nav-item">
+          <a href="#" class="footer-nav-link">About Us</a>
+        </li>
+        <li class="footer-nav-item">
+          <a href="#" class="footer-nav-link">Jobs</a>
+        </li>
+        <li class="footer-nav-item">
+          <a href="#" class="footer-nav-link">Press</a>
+        </li>
+        <li class="footer-nav-item">
+          <a href="#" class="footer-nav-link">Blog</a>
+        </li>
+      </ul>
+
+      <ul>
+        <li class="footer-nav-item">
+          <a href="#" class="footer-nav-link">Contact Us</a>
+        </li>
+        <li class="footer-nav-item">
+          <a href="#" class="footer-nav-link">Terms</a>
+        </li>
+        <li class="footer-nav-item">
+          <a href="#" class="footer-nav-link">Privacy</a>
+        </li>
+      </ul>
+    </div>
+
+    
+    <div class="footer-social-media">
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+    </div>
   </footer>
 </body>
 </html>
