@@ -49,6 +49,8 @@
 @media (min-width: 1200px) {
     .page-form {
         width: 50vw;
+        position: relative;
+        bottom: -100px;
         &-title {
             font-size: 30px;
         }
